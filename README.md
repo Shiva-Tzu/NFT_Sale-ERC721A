@@ -6,6 +6,4 @@ This contract has public sale, whitelist sale, and owner mint features. Test it 
 
 I have commented on essentially every line of code and provided resources for further information within those comments.
 
-I recommend using solidity compiler 0.8.4
-
 If you appreciate this resource, check out my NFT project Techno-Feudal Citizens. www.technofeudal.com

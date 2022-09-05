@@ -7,6 +7,8 @@ import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
+// Change "myNFT" with your NFT project name
+
 contract myNFT is ERC721A, Ownable, ReentrancyGuard {
     using Strings for uint256;
     using Counters for Counters.Counter;

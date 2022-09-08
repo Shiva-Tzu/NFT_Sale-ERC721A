@@ -77,7 +77,7 @@ contract myNFT is ERC721A, Ownable, ReentrancyGuard {
     // As the name suggests, this is the address for this NFT contract
     address public nftContractAddress;
 
-    // You can mint NFTs upon deployment if you'd like. If so, just uncomment "ownerMint" by deleting the two slashes "//" and replace the number 10 with however many NFTs you would like to mint upond deployment
+    // You can mint NFTs upon deployment if you'd like. If so, just uncomment "ownerMint" by deleting the two slashes "//" and replace the number 10 with however many NFTs you would like to mint upon deployment
     constructor(
         address _royalties,
         address _beneficiary,

@@ -19,7 +19,7 @@ contract myNFT is ERC721A, Ownable, ReentrancyGuard {
     // Provenance Hash helps your customers know you aren't scamming them pre-reveal.
     // Read more here: https://medium.com/coinmonks/the-elegance-of-the-nft-provenance-hash-solution-823b39f99473
 
-    string public PROVENANCE_HASH;
+    string public provenanceHash;
 
     // When deploying the smart contract you will be asked to insert your baseURI. This is the location of your
     // Metadata which links to the images that your NFTs will display. the URI will look something like ipfs://(and then a unique CID)
@@ -111,7 +111,7 @@ contract myNFT is ERC721A, Ownable, ReentrancyGuard {
 
     // This functions allow the owner of this contract to set the Provenance hash. Read previous comment about provenance hash close to the top of this contract for more info
     function setProvenanceHash(string calldata hash) public onlyOwner {
-        PROVENANCE_HASH = hash;
+        provenanceHash = hash;
     }
 
     // This allows the contract owner to reset the beneficiary of the Ether that is withdrawn from this smart contract
